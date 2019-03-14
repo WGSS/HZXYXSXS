@@ -1,0 +1,26 @@
+2019-01-06 21:22:30.626 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==>  Preparing: SELECT * FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
+2019-01-06 21:22:30.714 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==> Parameters: 1(Long)
+2019-01-06 21:22:30.853 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -<==      Total: 1
+2019-01-06 21:25:46.578 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==>  Preparing: SELECT * FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
+2019-01-06 21:25:46.787 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==> Parameters: 1(Long)
+2019-01-06 21:25:46.806 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -<==      Total: 1
+2019-01-06 21:26:08.754 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==>  Preparing: SELECT * FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
+2019-01-06 21:26:08.862 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==> Parameters: 1(Long)
+2019-01-06 21:26:08.998 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -<==      Total: 1
+2019-01-06 21:32:41.784 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==>  Preparing: SELECT * FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
+2019-01-06 21:32:41.965 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==> Parameters: 1(Long)
+2019-01-06 21:37:57.937 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==>  Preparing: SELECT * FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
+2019-01-06 21:37:58.171 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==> Parameters: 1(Long)
+2019-01-06 21:37:58.206 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -<==      Total: 1
+2019-01-06 21:43:50.953 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==>  Preparing: SELECT * FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
+2019-01-06 21:43:51.125 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==> Parameters: 1(Long)
+2019-01-06 21:43:51.146 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -<==      Total: 1
+2019-01-06 21:47:30.141 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==>  Preparing: SELECT * FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
+2019-01-06 21:47:30.349 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==> Parameters: 1(Long)
+2019-01-06 21:47:30.374 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -<==      Total: 1
+2019-01-06 21:53:32.017 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==>  Preparing: SELECT * FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
+2019-01-06 21:53:32.109 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -==> Parameters: 1(Long)
+2019-01-06 21:53:32.132 [main] DEBUG c.w.o.dao.ProductCategoryDao.queryProductCategory -<==      Total: 1
+2019-01-06 22:20:00.625 [main] DEBUG com.wgs.o2o.dao.AreaDao.queryArea -==>  Preparing: SELECT * FROM tb_area ORDER BY priority DESC 
+2019-01-06 22:20:00.795 [main] DEBUG com.wgs.o2o.dao.AreaDao.queryArea -==> Parameters: 
+2019-01-06 22:20:00.820 [main] DEBUG com.wgs.o2o.dao.AreaDao.queryArea -<==      Total: 3

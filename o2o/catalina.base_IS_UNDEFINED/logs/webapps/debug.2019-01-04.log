@@ -1,0 +1,18 @@
+2019-01-04 21:44:45.378 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id=? AND s.area_id=a.area_id AND s.shop_category_id=sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-01-04 21:44:45.484 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -==> Parameters: 3(Long), 0(Integer), 2(Integer)
+2019-01-04 21:44:45.520 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -<==      Total: 0
+2019-01-04 21:44:45.528 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id=? AND s.area_id=a.area_id AND s.shop_category_id=sc.shop_category_id 
+2019-01-04 21:44:45.530 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -==> Parameters: 3(Long)
+2019-01-04 21:44:45.534 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -<==      Total: 1
+2019-01-04 21:45:32.179 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id=? AND s.area_id=a.area_id AND s.shop_category_id=sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-01-04 21:45:32.271 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -==> Parameters: 2(Long), 0(Integer), 2(Integer)
+2019-01-04 21:45:32.292 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -<==      Total: 2
+2019-01-04 21:45:32.298 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id=? AND s.area_id=a.area_id AND s.shop_category_id=sc.shop_category_id 
+2019-01-04 21:45:32.298 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -==> Parameters: 2(Long)
+2019-01-04 21:45:32.301 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -<==      Total: 1
+2019-01-04 21:47:30.245 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id=? AND s.area_id=a.area_id AND s.shop_category_id=sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-01-04 21:47:30.460 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -==> Parameters: 2(Long), 0(Integer), 2(Integer)
+2019-01-04 21:47:30.484 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopList -<==      Total: 2
+2019-01-04 21:47:30.490 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id=? AND s.area_id=a.area_id AND s.shop_category_id=sc.shop_category_id 
+2019-01-04 21:47:30.491 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -==> Parameters: 2(Long)
+2019-01-04 21:47:30.492 [main] DEBUG com.wgs.o2o.dao.ShopDao.queryShopCount -<==      Total: 1
