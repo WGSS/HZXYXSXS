@@ -93,4 +93,19 @@ public class ImageUtil {
 
 	}
 
+	public static String generateNormalImg(InputStream thumbnailInputStream, String fileName, String targetAddr) {
+		String realFileName = getRandomFileName();
+		String extension = getFileExtension(fileName);
+		makeDirPath(targetAddr);
+		String relativeAddr = targetAddr + realFileName + extension;
+		File dest = new File(PathUtil.getImgBasePath() + relativeAddr);
+		try {
+			Thumbnails.of(thumbnailInputStream).size(337, 640).toFile(dest);
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return relativeAddr;
+	}
+
 }
