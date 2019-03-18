@@ -23,6 +23,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import com.fasterxml.jackson.core.Versioned;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.wgs.o2o.dto.ImageHolder;
 import com.wgs.o2o.dto.ShopExecution;
 import com.wgs.o2o.entity.Area;
 import com.wgs.o2o.entity.PersonInfo;
@@ -178,7 +179,8 @@ public class ShopManagementController {
 			shop.setOwner(owner);
 			ShopExecution se;
 			try {
-				se = shopservice.addshop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
+				ImageHolder imageHolder=new ImageHolder(shopImg.getOriginalFilename(),shopImg.getInputStream());
+				se = shopservice.addshop(shop, imageHolder);
 				if (se.getState() == ShopstateEnum.CHECK.getState()) {
 					modelMap.put("success", true);
 					// 该用户可操作商店列表
@@ -246,10 +248,11 @@ public class ShopManagementController {
 		if (shop != null && shop.getShopId() != null) {
 			ShopExecution se;
 			try {
+				ImageHolder imageHolder=new ImageHolder(shopImg.getOriginalFilename(),shopImg.getInputStream());
 				if (shopImg == null) {
-					se = shopservice.modifyShop(shop, null, null);
+					se = shopservice.modifyShop(shop,null);
 				} else {
-					se = shopservice.modifyShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
+					se = shopservice.modifyShop(shop,imageHolder);
 				}
 				if (se.getState() == ShopstateEnum.SUCCESS.getState()) {
 					modelMap.put("success", true);

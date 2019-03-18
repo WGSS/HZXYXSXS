@@ -3,6 +3,7 @@ package com.wgs.o2o.service;
 import java.io.File;
 import java.io.InputStream;
 
+import com.wgs.o2o.dto.ImageHolder;
 import com.wgs.o2o.dto.ShopExecution;
 import com.wgs.o2o.entity.Shop;
 import com.wgs.o2o.exception.ShopOperationException;
@@ -34,7 +35,7 @@ public interface ShopService {
 	 * @return
 	 * @throws ShopOperationException
 	 */
-	ShopExecution modifyShop(Shop shop, InputStream ShopImgInputStream, String fileName) throws ShopOperationException;
+	ShopExecution modifyShop(Shop shop, ImageHolder thumbnail) throws ShopOperationException;
 
 	/**
 	 * 注册店铺 包括图片的处理
@@ -45,6 +46,6 @@ public interface ShopService {
 	 * @return
 	 * @throws ShopOperationException
 	 */
-	ShopExecution addshop(Shop shop, InputStream ShopImgInputStream, String fileName) throws ShopOperationException;
+	ShopExecution addshop(Shop shop, ImageHolder thumbnail) throws ShopOperationException;
 
 }

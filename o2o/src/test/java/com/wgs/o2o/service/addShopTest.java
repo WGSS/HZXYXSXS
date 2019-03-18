@@ -13,6 +13,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.wgs.o2o.BaseTest;
+import com.wgs.o2o.dto.ImageHolder;
 import com.wgs.o2o.dto.ShopExecution;
 import com.wgs.o2o.entity.Area;
 import com.wgs.o2o.entity.PersonInfo;
@@ -45,7 +46,8 @@ public class addShopTest extends BaseTest {
 	   shop.setShopName("更新后的名字");
 	   File shopImg=new File("D:/5778.jpg");
 		  InputStream iStream=new FileInputStream(shopImg);
-		  ShopExecution shopExecution=shopService.modifyShop(shop, iStream, shopImg.getName());
+		  ImageHolder imageHolder=new ImageHolder(shopImg.getName(), iStream);
+		  ShopExecution shopExecution=shopService.modifyShop(shop,imageHolder);
         System.out.println(shopExecution.getShop().getShopImg());
    }
    
@@ -74,7 +76,8 @@ public class addShopTest extends BaseTest {
 		  shop.setAdvice("审核中");
 		  File shopImg=new File("D:/7625.jpg");
 		  InputStream iStream=new FileInputStream(shopImg);
-		  ShopExecution shopExecution=shopService.addshop(shop,iStream,shopImg.getName());
+		  ImageHolder imageHolder=new ImageHolder(shopImg.getName(), iStream);
+		  ShopExecution shopExecution=shopService.addshop(shop,imageHolder);
 		  assertEquals(ShopstateEnum.CHECK.getState(),shopExecution.getState());
 	   
    }
